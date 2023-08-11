@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" modified="2023-08-11T07:55:36.461Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="u_p6aXOZbdYjv8V04Mob" version="21.6.8" type="github">
+  <diagram name="第 1 页" id="4dMbcMLYOCdhM3QpGaA5">
+    <mxGraphModel dx="4704" dy="740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eibFkGF5vqFaTbWi70DU-107" value="副本集示例" style="swimlane;startSize=30;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;flipH=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-3280" y="840" width="350" height="280" as="geometry">
+            <mxRectangle x="-1750" y="510" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-108" value="" style="group;rotation=90;" vertex="1" connectable="0" parent="eibFkGF5vqFaTbWi70DU-107">
+          <mxGeometry x="60" y="40" width="240" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-109" value="shard1svr1&lt;br&gt;（主）" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#F2CC8F;strokeColor=#E07A5F;labelBackgroundColor=none;fontColor=#393C56;treeFolding=1;treeMoving=1;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-108">
+          <mxGeometry x="90" y="10" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-110" value="shard1svr2&lt;br&gt;(副本集)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#F2CC8F;strokeColor=#E07A5F;labelBackgroundColor=none;fontColor=#393C56;treeFolding=1;treeMoving=1;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-108">
+          <mxGeometry y="125" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-111" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;elbow=vertical;" edge="1" parent="eibFkGF5vqFaTbWi70DU-108" source="eibFkGF5vqFaTbWi70DU-109" target="eibFkGF5vqFaTbWi70DU-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-112" value="shard1svr3&lt;br&gt;（副本集）" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#F2CC8F;strokeColor=#E07A5F;labelBackgroundColor=none;fontColor=#393C56;treeFolding=1;treeMoving=1;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-108">
+          <mxGeometry x="170" y="125" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-113" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;elbow=vertical;" edge="1" parent="eibFkGF5vqFaTbWi70DU-108" source="eibFkGF5vqFaTbWi70DU-109" target="eibFkGF5vqFaTbWi70DU-112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-149" value="Query Routers" style="swimlane;startSize=30;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-2930" y="250" width="500" height="200" as="geometry">
+            <mxRectangle x="-2930" y="250" width="150" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-150" value="mongos" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#10739e;fillColor=#b1ddf0;fontSize=16;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-149">
+          <mxGeometry x="30" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-152" value="mongos" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#10739e;fillColor=#b1ddf0;fontSize=16;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-149">
+          <mxGeometry x="180" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-151" value="mongos" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#10739e;fillColor=#b1ddf0;fontSize=16;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-149">
+          <mxGeometry x="340" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-153" value="Shard" style="swimlane;startSize=30;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;fontSize=16;rounded=0;shadow=0;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+          <mxGeometry x="-2930" y="550" width="500" height="200" as="geometry">
+            <mxRectangle x="-2930" y="510" width="150" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-154" value="shard1&lt;br&gt;（副本集）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#10739e;fillColor=#b1ddf0;fontSize=16;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-153">
+          <mxGeometry x="30" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-155" value="shard2&lt;br&gt;（副本集）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#10739e;fillColor=#b1ddf0;fontSize=16;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-153">
+          <mxGeometry x="180" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-156" value="shard3&lt;br&gt;（副本集）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#10739e;fillColor=#b1ddf0;fontSize=16;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-153">
+          <mxGeometry x="340" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-160" value="Config Server" style="swimlane;startSize=30;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-2380" y="360" width="500" height="280" as="geometry">
+            <mxRectangle x="-2930" y="250" width="150" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-161" value="configsvr1&lt;br&gt;(主)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#10739e;fillColor=#b1ddf0;fontSize=16;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-160">
+          <mxGeometry x="190" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-162" value="configsvr2&lt;br&gt;（副本集）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#10739e;fillColor=#b1ddf0;fontSize=16;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-160">
+          <mxGeometry x="60" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-163" value="configsvr3&lt;br&gt;（副本集）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#10739e;fillColor=#b1ddf0;fontSize=16;" vertex="1" parent="eibFkGF5vqFaTbWi70DU-160">
+          <mxGeometry x="320" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-165" value="&lt;a href=&quot;https://www.runoob.com/mongodb/mongodb-sharding.html&quot;&gt;参考示例：https://www.runoob.com/mongodb/mongodb-sharding.html&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="-2325" y="95" width="390" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eibFkGF5vqFaTbWi70DU-166" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Mongodb分片副本集部署&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="-2800" y="80" width="430" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
